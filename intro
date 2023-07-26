@@ -1,0 +1,9 @@
+SSRF--> SSRF Vulnerability occur when application is fetching resources remote resources without validating user supply.Types 2 :- 1)Regular/Inband 2)Blind/Outof bind
+
+-->identify any request parameters that contains hostnames, IP address or full URLS
+--> decimal-encoded version of 127.0.0.1 is 2130706433
+--> 127.1 resolves to 127.0.0.1
+--> Octal representation of 127.0.0.1 is 017700000001
+
+--> DNS Rebinding--> register a domain that resolves to internal IP address
+--> HTTP Redirection --> use your own server that redirects to an internal IP address
