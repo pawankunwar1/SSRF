@@ -1,0 +1,18 @@
+oAuth 2.0 terminology
+--> Resource Owner --> means user user 
+--> Client --> client is the application that want to get the information from Google
+-> Authorization Server --> it is the server that gives permission to authorize like accounts.google.com by entering email and password.
+--> Resource Server --> Resource server is the server where resources is stored.
+--> Authorization grant -->  it means it gives the grant to access the resources.
+-->Redirect URI --> this is the uri where does client goes after getting resources like /useradminpage4
+-->Access token --> authorization grant does many things but in higher level access token is the key that say what resource does i granted.
+
+
+
+--> Here, user click in "connect with google" in example.com the the request is going to ther authorization server where user enter gmail and password for authorization with that it also 
+provide redirect Uri to authorization server and inaback authorization server gives Response type: code , after that google server prompts allow for resources(yes or no) then after alowing it redirect to redirect URI, 
+the client does not do many things with authorization code but the client ask authorization server hey i need access token and to get the access token it must provide the authorization code, authorization server validates the code and give   
+token. Now the client can interact with resources server for data by using access token.
+--> Firstly, what client is requested to access the resources based on that token is given . ex if client first want to access contacts but later want to access other information , the server doesnt give permission.
+
+
