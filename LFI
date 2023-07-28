@@ -1,0 +1,6 @@
+Directory -->1) Root 2)Web Document Root(var/www/html)
+-->                      /
+var                         etc                     bin
+www
+html
+DVWA
