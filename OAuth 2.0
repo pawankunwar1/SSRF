@@ -24,5 +24,6 @@ token. Now the client can interact with resources server for data by using acces
 
 1) Token Stealing --> steal access_token of the application and use it to login into users account -->1) Find domain used in "redirect_uri" 2) Can you use "subdomains" in the "redirect_uri" 3) Poin tthe redirect_uri to a page (a) open redirector to attackerdomain b) Xss Xss which can be used in redirect_uri to pass access_token to attacker c) subdoman takeover(allowed subdomain in redirect uri) d)Backtrack to a page which can be used to open redirect/xss.
 and use the stole token to login 
+-->Code Stealing --> find domain in the redirect_uri(can you use subdomain in the rediredt_uri) --> checks if authorization_code derived from manipulated 'redirect_uri' works when fetching 'access_token' --> Point the redirect_uri to a page. a) xss which can be used in 'redirect_uri' to pass 'authorization_code' to attacker. b)subdomain takeover(allowed subdomain in 'redirect_uri' c) loading user controlled external images, scripts, etc(leaking referrer) d) Use the stolen authorization_code to login. 
 
 
