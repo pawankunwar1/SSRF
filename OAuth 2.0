@@ -16,3 +16,13 @@ token. Now the client can interact with resources server for data by using acces
 --> Firstly, what client is requested to access the resources based on that token is given . ex if client first want to access contacts but later want to access other information , the server doesnt give permission.
 
 
+
+--> Attacks on OAuth 2.0 
+1) Token/Code Stealing
+2) CSRF(missing `state` param)
+3) Token Impersonation 
+
+1) Token Stealing --> steal access_token of the application and use it to login into users account -->1) Find domain used in "redirect_uri" 2) Can you use "subdomains" in the "redirect_uri" 3) Poin tthe redirect_uri to a page (a) open redirector to attackerdomain b) Xss Xss which can be used in redirect_uri to pass access_token to attacker c) subdoman takeover(allowed subdomain in redirect uri) d)Backtrack to a page which can be used to open redirect/xss.
+and use the stole token to login 
+
+
