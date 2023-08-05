@@ -7,3 +7,6 @@ SSRF--> SSRF Vulnerability occur when application is fetching resources remote r
 
 --> DNS Rebinding--> register a domain that resolves to internal IP address
 --> HTTP Redirection --> use your own server that redirects to an internal IP address
+
+
+-->domain.com@127.0.0.1
